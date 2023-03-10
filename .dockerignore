@@ -1,0 +1,6 @@
+backend/node_modules
+npm-debug.log
+.git
+/backend/images
+/backend/.env
+/backend/.env-development

@@ -1,0 +1,16 @@
+{
+  "name": "advanced_backend",
+  "version": "1.0.0",
+  "description": "advanced server",
+  "main": "",
+  "scripts": {
+    "docker-up-dev": "sudo docker-compose -f docker-compose.dev.yaml up --build",
+    "docker-up-prod": "sudo docker-compose -f docker-compose.prod.yaml up --build",
+    "docker-prune": "sudo docker system prune --all --volumes --force",
+    "docker-nodes": "sudo docker node ls",
+    "docker-swarm-deploy": "sudo docker stack deploy -c docker-compose.yaml backend",
+    "docker-swarm-remove": "sudo docker stack rm backend"
+  },
+  "author": "me",
+  "license": "MIT"
+}

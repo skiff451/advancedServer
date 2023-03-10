@@ -1,0 +1,58 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Simple API overview",
+    "description": "swagger api",
+    "version": "v1"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "pid on what app started",
+        "produces": [
+          "text/html; charset=utf-8"
+        ],
+        "responses": {
+          "200": {
+            "description": "return greeting and number of pid on what app runs",
+            "examples": {
+              "text/html; charset=utf-8": "Hello  World! from pid: 18"
+            }
+          }
+        }
+      }
+    },
+    "/slowly": {
+      "get": {
+        "summary": "imitate slowly working of server",
+        "produces": [
+          "text/html; charset=utf-8"
+        ],
+        "responses": {
+          "200": {
+            "description": "return pid of process and a greeting",
+            "examples": {
+              "text/html; charset=utf-8": "slowed from pid: 18"
+            }
+          }
+        }
+      }
+    },
+    "/items": {
+      "get": {
+        "summary": "returns all items",
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "responses": {
+          "200": {
+            "description": "return array with the items",
+            "examples": {
+              "application/json; charset=utf-8": "{\n    \"message\": \"all items\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"itemName\": \"something\",\n            \"createdAt\": \"2023-03-09T08:24:22.228Z\",\n            \"updatedAt\": \"2023-03-09T08:24:22.228Z\"\n        }\n    ]\n}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "/items": {
+    "get": {
+      "summary": "pid on what app started",
+      "produces": [
+        "text/html; charset=utf-8"
+      ],
+      "responses": {
+        "200": {
+          "description": "return greeting and number of pid on what app runs",
+          "examples": {
+            "text/html; charset=utf-8": "{\n    \"message\": \"all items\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"itemName\": \"something\",\n            \"createdAt\": \"2023-03-09T08:24:22.228Z\",\n            \"updatedAt\": \"2023-03-09T08:24:22.228Z\"\n        }\n    ]\n}"
+          }
+        }
+      }
+    }
+  }
+}
